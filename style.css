@@ -1,0 +1,47 @@
+body
+{
+    background: #2f2f3d;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 200vh;
+}
+
+header
+{
+    justify-self: center;
+    height: 10vh;
+    width: 100vw;
+    margin: 2vh 2vw;
+}
+
+#header-div
+{
+    display: flex;
+    align-items: center;
+    height: 6vh;
+    width: 96vw;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+p
+{
+    font-family: monospace;
+    font-size: 40px;
+    color: black;
+}
+
+.glass-opaque
+{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(5px) saturate(180%);
+    -webkit-backdrop-filter: blur(5px) saturate(180%);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
