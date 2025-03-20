@@ -3,29 +3,10 @@ body
     background: #2f2f3d;
     margin: 0;
     display: flex;
-    justify-content: center;
-    height: 200vh;
-}
-
-header
-{
-    justify-self: center;
-    height: 10vh;
-    width: 100vw;
-    margin: 2vh 2vw;
-}
-
-#header-div
-{
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    height: 6vh;
-    width: 96vw;
-    justify-content: center;
-    align-content: center;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
+    height: 100vh;
+    width: 100vw;
 }
 
 p
@@ -35,9 +16,53 @@ p
     color: black;
 }
 
+h1
+{
+    text-align: center;
+    font-family: monospace;
+    font-size: 40px;
+    font-weight: 100;
+    letter-spacing: 0.6em;
+    color: white;
+}
+
+#header-div
+{
+    display: flex;
+    align-items: center;
+    height: 6vh;
+    width: 96vw;
+    margin-top: 2vh;
+    justify-content: center;
+    align-content: center;
+}
+
+#page-title
+{
+    font-weight: 100;
+    letter-spacing: 0.6em;
+    color: white;
+    backdrop-filter: opacity(50%);
+}
+
+#main-content
+{
+    margin-top: 50px;
+}
+
+#emil-img
+{
+    width: 60vw;
+    height: 60vh;
+    margin-top: 2vh;
+    border: 7px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 50px black;
+}
+
 .glass-opaque
 {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
     backdrop-filter: blur(5px) saturate(180%);
     -webkit-backdrop-filter: blur(5px) saturate(180%);
     border-radius: 10px;
